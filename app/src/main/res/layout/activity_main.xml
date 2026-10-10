@@ -10,72 +10,79 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="204dp"
-        android:text="Registration form"
+        android:text="@string/registration_form"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.001" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="372dp"
-        android:layout_height="48dp"
+        android:layout_width="307dp"
+        android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="76dp"
+        android:autofillHints="username"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/hint_username"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="374dp"
-        android:layout_height="43dp"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="146dp"
+        android:autofillHints="name"
         android:ems="10"
-        android:hint="Full name"
+        android:hint="@string/hint_full_name"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText3"
-        android:layout_width="374dp"
-        android:layout_height="41dp"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="235dp"
+        android:layout_marginTop="228dp"
+        android:autofillHints="countryName"
         android:ems="10"
-        android:hint="Country"
+        android:hint="@string/hint_country"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="369dp"
-        android:layout_height="42dp"
+        android:layout_width="313dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="311dp"
+        android:layout_marginTop="304dp"
+        android:autofillHints="emailAddress"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/hint_email"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="367dp"
-        android:layout_height="45dp"
+        android:layout_width="314dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="386dp"
+        android:autofillHints="phone"
         android:ems="10"
-        android:hint="Phone number"
+        android:hint="@string/hint_phone_number"
         android:inputType="phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -84,20 +91,45 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="463dp"
-        android:text="Gender"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="464dp"
+        android:text="@string/gender_label"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="452dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_male" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/radio_female" />
+    </RadioGroup>
+
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="366dp"
-        android:layout_height="42dp"
+        android:layout_width="324dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="517dp"
+        android:autofillHints="password"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/hint_password"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -106,29 +138,20 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="593dp"
-        android:text="Agree with terms and conditions"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="588dp"
+        android:text="@string/terms_and_conditions"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="450dp"
-        android:text="Male"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
-        android:text="Female"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="646dp"
+        android:text="@string/create_account"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
