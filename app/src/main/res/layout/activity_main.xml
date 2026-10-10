@@ -8,23 +8,24 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="193dp"
+        android:layout_height="31dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="204dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="200dp"
         android:text="@string/registration_form"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="307dp"
+        android:layout_width="324dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="76dp"
@@ -37,8 +38,8 @@
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="305dp"
-        android:layout_height="55dp"
+        android:layout_width="324dp"
+        android:layout_height="47dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="146dp"
         android:autofillHints="name"
@@ -50,8 +51,8 @@
 
     <EditText
         android:id="@+id/editTextText3"
-        android:layout_width="313dp"
-        android:layout_height="57dp"
+        android:layout_width="326dp"
+        android:layout_height="59dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="228dp"
         android:autofillHints="countryName"
@@ -63,8 +64,8 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="313dp"
-        android:layout_height="55dp"
+        android:layout_width="326dp"
+        android:layout_height="57dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="304dp"
         android:autofillHints="emailAddress"
@@ -76,8 +77,8 @@
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="314dp"
-        android:layout_height="50dp"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="386dp"
         android:autofillHints="phone"
@@ -101,9 +102,9 @@
         android:id="@+id/radioGroupGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginStart="12dp"
         android:layout_marginTop="452dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -123,8 +124,8 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="324dp"
-        android:layout_height="54dp"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="517dp"
         android:autofillHints="password"
